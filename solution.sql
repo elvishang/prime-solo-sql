@@ -28,4 +28,4 @@ VALUES ('elvishang', 'minneapolis', '110', '110', '1000000');
 
 --9 The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: 
 --Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
-DELETE FROM "syntax_practice" WHERE ("city" LIKE 'miami,phoenix' AND "transactions_completed" < 5);
+DELETE FROM "syntax_practice" WHERE "city" LIKE 'miami' OR "city" LIKE 'phoenix' AND "transactions_completed" < 5;
